@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="#484c4b"
+        android:alpha="0.8"
+        android:id="@+id/alphaview">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView2"
+            android:background="@android:color/black"
+            android:layout_margin="8dp"
+            android:alpha="0.7" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/alphaview"
+        android:layout_alignLeft="@+id/alphaview"
+        android:layout_alignRight="@+id/alphaview"
+        android:layout_alignBottom="@+id/alphaview">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="why breathing?"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:textSize="21dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textAppearance="?android:attr/textAppearanceLarge"
+            android:text="Breath practices are part of every faith tradition. They help us to center our focus, calm our minds, shift our awareness and help to change the stress response of our physical bodies. By focusing on your breath you can say you are focusing on tthe ru’ah—spirit or breath—that God uses to always stay in contact with creation. If you are breathing, you can say that you are connected to God, and feel that you are connected to God. And as long as you are breathing, there is nothing that can separate you from God&apos;s love, strength, presence, peace or joy."
+            android:id="@+id/tv_description"
+            android:layout_below="@+id/tv_title"
+            android:layout_marginLeft="24dp"
+            android:layout_marginRight="24dp"
+            android:layout_marginTop="15dp"
+            android:layout_marginBottom="30dp"
+            android:gravity="center_horizontal"
+            android:textSize="13dp"
+            android:textColor="@android:color/white" />
+
+    </RelativeLayout>
+</RelativeLayout>

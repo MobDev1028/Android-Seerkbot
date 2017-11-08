@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+    <RelativeLayout
+        android:layout_width="320dp"
+        android:layout_height="400dp"
+        android:layout_centerInParent="true"
+        android:background="#484c4b"
+        android:alpha="0.8"
+        android:id="@+id/alphaview">
+
+        <ImageView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/imageView2"
+            android:background="@android:color/black"
+            android:layout_margin="8dp"
+            android:alpha="0.7" />
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@+id/alphaview"
+        android:layout_alignLeft="@+id/alphaview"
+        android:layout_alignRight="@+id/alphaview"
+        android:layout_alignBottom="@+id/alphaview">
+
+        <TextView
+            android:id="@+id/tv_title"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="select your sacred entity"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="28dp"
+            android:textSize="21dp"
+            android:textColor="@android:color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="for today?"
+            android:id="@+id/sub_title"
+            android:textSize="21dp"
+            android:textColor="@android:color/white"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/tv_title" />
+
+        <ListView
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:id="@+id/listView"
+            android:layout_below="@+id/sub_title"
+            android:divider="@null"
+            android:dividerHeight="0dp"
+            android:layout_marginTop="30dp" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
